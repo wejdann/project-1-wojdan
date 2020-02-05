@@ -1,17 +1,16 @@
 
 body{
-width: auto;
 text-align: center;
 justify-content: center;
 background-color: #cccccc;
 background-image:url("imges/atmosphere-background-bright-clouds-19670.jpg");;
-size: 50%;
+margin: auto;
 }
 
 .container{
 text-align: center;
 justify-content: center;
-margin: 60px;
+margin: 25px;
 display: grid;
 grid-template-rows:50px 50px 50px  ;
 grid-template-columns:50px 50px 50px  ;
@@ -56,13 +55,13 @@ h2{
     text-shadow: 1px 0 0 #fff;
 
 }
-#StartAgin{
-    border-radius: 50%;
+#StartAgain{
+    border-radius: 50%; 
     color: #d04764; 
     font-family: 'Lobster', cursive; 
     font-size : 20px;
     background-color:#F7CAC9;
-    
+justify-content: space-between;
 }
 #Win{
     margin-top:40px ;
@@ -70,7 +69,12 @@ h2{
     color:	palevioletred; 
     font-family: 'Lobster', cursive; 
     font-size : 20px; 
-    border-radius: 50%;
 }
+#move{
+    border-radius: 50%;
+    color:	palevioletred; 
+    font-family: 'Lobster', cursive; 
+    font-size : 20px; 
 
+}
 

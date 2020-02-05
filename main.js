@@ -4,6 +4,7 @@ let boxes = document.querySelectorAll('.boxes');
 //switch btw player by let X=1 and O=0
 let player = 1;
 let turnsCount = 0;
+let test = document.getElementById("move");
 
 function switchPlayer() {
     turnsCount++;
@@ -12,7 +13,7 @@ function switchPlayer() {
         document.getElementById("move").textContent = "Turn To Player 'O'";
         player = 0;
     } else {
-        this.innerHTML = "O";
+        this.innerHTML = '<span style="color:#FFF"> O </span>';
         document.getElementById("move").textContent = "Turn To Player 'X'";
         player = 1;
     }
@@ -32,12 +33,13 @@ function stopGameAfterWin() {
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].removeEventListener("click", switchPlayer);
     }
+    test.style.display = 'none';
 }
 //function to check the boxes of winer 
 function checkForWins() {
     //this if check boxes in row(1) >>[0],[1],[2] , then return massage and  stop game by call function
     if (Box0.innerHTML !== "" && Box0.innerHTML === Box1.innerHTML && Box0.innerHTML === Box2.innerHTML) {
-       //var colorBoxwin= document.getElementById("Box0","Box1","Box2").style.backgroundColor='blue';
+        //var colorBoxwin= document.getElementById("Box0","Box1","Box2").style.backgroundColor='blue';
         document.getElementById("Win").textContent = "congrats you Win";
         stopGameAfterWin();
     }
@@ -79,7 +81,7 @@ function checkForWins() {
         document.getElementById("Win").textContent = "The game is tie !";
     }
 }
-//this function for clear boxes and allow to play agine when click the button
+//this function for clear boxes and allow to  StartAgain when click the button
 function replay() {
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].addEventListener("click", switchPlayer);
