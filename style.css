@@ -1,7 +1,6 @@
 
 body{
-width: 1000px;
-height: 1000px;
+width: auto;
 text-align: center;
 justify-content: center;
 background-color: #cccccc;
@@ -35,14 +34,6 @@ padding: 0px 0px;
 .boxes:hover {
     background-color:gray;
 }
-.container span {
-    text-align: center;
-    color: #d04764; 
-    font-family: 'Lobster', cursive; 
-    font-size: 22px; 
-    font-weight: normal; 
-
-}
 h1{
     text-align: center;
     color: #d04764; 
@@ -53,16 +44,30 @@ h1{
     margin: 0 0 18px; 
     text-shadow: 1px 0 0 #fff;
 }
+
+h2{
+    text-align: center;
+    color:palevioletred; 
+    font-family: 'Lobster', cursive; 
+    font-size: 20px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0 0 18px; 
+    text-shadow: 1px 0 0 #fff;
+
+}
 #StartAgin{
     border-radius: 50%;
     color: #d04764; 
     font-family: 'Lobster', cursive; 
     font-size : 20px;
+    background-color:#F7CAC9;
+    
 }
 #Win{
     margin-top:40px ;
     border-radius: 50%;
-    color: #d04764; 
+    color:	palevioletred; 
     font-family: 'Lobster', cursive; 
     font-size : 20px; 
     border-radius: 50%;
