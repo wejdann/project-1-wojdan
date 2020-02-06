@@ -6,7 +6,6 @@ background-color: #cccccc;
 background-image:url("imges/atmosphere-background-bright-clouds-19670.jpg");;
 margin: auto;
 }
-
 .container{
 text-align: center;
 justify-content: center;
@@ -15,7 +14,6 @@ display: grid;
 grid-template-rows:50px 50px 50px  ;
 grid-template-columns:50px 50px 50px  ;
 grid-gap: 100px;
-
 }
 .boxes{
 font-family: "comic sans MS", sans-serif,cursive;
@@ -27,8 +25,6 @@ height: 80px;
 border: 1px solid gray;
 margin: 0px 0px;
 padding: 0px 0px;
-
-
 }
 .boxes:hover {
     background-color:gray;
@@ -43,7 +39,6 @@ h1{
     margin: 0 0 18px; 
     text-shadow: 1px 0 0 #fff;
 }
-
 h2{
     text-align: center;
     color:palevioletred; 
@@ -53,7 +48,6 @@ h2{
     line-height: 48px; 
     margin: 0 0 18px; 
     text-shadow: 1px 0 0 #fff;
-
 }
 #StartAgain{
     border-radius: 50%; 
@@ -75,6 +69,5 @@ justify-content: space-between;
     color:	palevioletred; 
     font-family: 'Lobster', cursive; 
     font-size : 20px; 
-
 }
 

@@ -1,11 +1,11 @@
 console.log('Hi');
 //select all box in div
 let boxes = document.querySelectorAll('.boxes');
-//switch btw player by let X=1 and O=0
+//declare variable to use it in  function
 let player = 1;
 let turnsCount = 0;
-let test = document.getElementById("move");
-
+let moveTonext = document.getElementById("move");
+//switch btw player by let X=1 and O=0
 function switchPlayer() {
     turnsCount++;
     if (player == 1) {
@@ -33,13 +33,12 @@ function stopGameAfterWin() {
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].removeEventListener("click", switchPlayer);
     }
-    test.style.display = 'none';
+    moveTonext.style.display = 'none';
 }
 //function to check the boxes of winer 
 function checkForWins() {
     //this if check boxes in row(1) >>[0],[1],[2] , then return massage and  stop game by call function
     if (Box0.innerHTML !== "" && Box0.innerHTML === Box1.innerHTML && Box0.innerHTML === Box2.innerHTML) {
-        //var colorBoxwin= document.getElementById("Box0","Box1","Box2").style.backgroundColor='blue';
         document.getElementById("Win").textContent = "congrats you Win";
         stopGameAfterWin();
     }
@@ -77,16 +76,22 @@ function checkForWins() {
     else if (Box2.innerHTML !== "" && Box2.innerHTML === Box4.innerHTML && Box2.innerHTML === Box6.innerHTML) {
         document.getElementById("Win").textContent = "congrats you Win";
         stopGameAfterWin();
-    } else if (turnsCount == 9) {
+    }
+    //if all condition not true and all boxes have value X and O show massage the game is tie
+    else if (turnsCount == 9) {
         document.getElementById("Win").textContent = "The game is tie !";
+
     }
 }
-//this function for clear boxes and allow to  StartAgain when click the button
+//this function for clear boxes and allow to  StartAgain when click the button 
 function replay() {
     for (let i = 0; i < boxes.length; i++) {
+        document.getElementById("Win").textContent = "";
+        moveTonext.style.display = "";
         boxes[i].addEventListener("click", switchPlayer);
         boxes[i].innerHTML = "";
         turnsCount = 0;
     }
     player = 1;
+
 }
