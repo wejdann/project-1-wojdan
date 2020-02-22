@@ -32,8 +32,6 @@ Tic-Tac -Toe (along with a lot of other games) involves looking ahead and trying
 * Check the win .
 * Still in play or not depend on the role of game .
 
-#### The unsolved problems :
-Make the winer background-clor change by the array because the other ways shoud write by using long code **(DRY)**.
 **future plans :** 
 Work to doing  all the Extra Tic Tac Toe Features , and the Super Potential Extra Tic Tac Toe Features
 
