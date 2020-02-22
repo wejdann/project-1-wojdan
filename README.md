@@ -16,7 +16,7 @@ Tic-Tac -Toe (along with a lot of other games) involves looking ahead and trying
 5. **As a player,**  I want to see a message when I win, lose or tie to know my status.
 6. **As a player,**  I want to be unable to to continue playing once I win, lose, or tie, to keep the game rols.
 7. **As a player,** I want to be able to play the game again without refreshing the page to make the game reusable.
-###The plan :
+##### The plan :
 ##### Personal Development Plan :
 1. **My Goals :** Create a game work without error both logical and technology.
 2. **Objective :** Do all the basic requirement of project.
